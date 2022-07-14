@@ -1,0 +1,1 @@
+This is the app i created using class based generic views with the help of the book 'django for beginners'
