@@ -4,3 +4,5 @@ Pipfile.lock
 *.log
 *.ssh
 db.sqlite3
+blog\__pycache__
+django_project\__pycache__
