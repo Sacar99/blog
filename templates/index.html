@@ -10,6 +10,20 @@
             <div class="nav-left">
                 <h1><a href="{% url 'blog:home' %}">Django blog</a></h1>
             </div>
+            {% if user.is_authenticated %}
+                <p>Hi, {{ user.username }}</p>
+            {% else %}
+                <p>You are not logged in!</p>&emsp;
+                <p><a href="{% url 'login' %}">Login</a> | 
+                <a href="{% url 'signup' %}">Sign Up</a></p>
+            {% endif %}
+
+            <div class="nav_right">
+                {% if post_list %}
+                    <h3><a href="{% url 'blog:new' %}">+ New Post</a></h3>
+                {% endif %}
+            </div>
+
         </header>
         <div>
             {% if post_list %}

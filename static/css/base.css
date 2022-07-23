@@ -36,18 +36,3 @@ body {
     .post-entry h2 a:hover {
         color: purple;
         }
-        .post-entry h2 {
-            margin: 0.5rem 0;
-            }
-            .post-entry h2 a,
-            .post-entry h2 a:visited {
-            color: blue;
-            text-decoration: none;
-            }
-            .post-entry p {
-            margin: 0;
-            font-weight: 400;
-            }
-            .post-entry h2 a:hover {
-                color: purple;
-                }
